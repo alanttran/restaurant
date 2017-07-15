@@ -25,7 +25,7 @@ app.get("/reserve", function(req, res) {
 });
 app.get("/tables", function(req, res) {
   // call function getTableReservations and generate HTML
-  res.sendFile(path.join(__dirname, "tables.html"));
+  res.sendFile(path.join(__dirname, "table.html"));
   getTableReservations();
   
 });
