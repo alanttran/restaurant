@@ -34,10 +34,7 @@ app.get("/reserve", function(req, res) {
     res.sendFile(path.join(__dirname, "reserve.html"));
 });
 app.get("/tables", function(req, res) {
-    // call function getTableReservations and generate HTML
     res.sendFile(path.join(__dirname, "tables.html"));
-    getTableReservations();
-
 });
 
 app.get("/api/tables", function(req, res) {
