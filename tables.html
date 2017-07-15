@@ -65,7 +65,7 @@ $(document).ready(function() {
     $.get("/api/waitlist", function(data) {
         $("#waitlist").empty();
         for (var i = 0; i < data.length; i++) {
-            $("#table").append("<div class='panel panel-default'><div class='panel-body'>" + data[i].name + "</div></div>");
+            $("#waitlist").append("<div class='panel panel-default'><div class='panel-body'>" + data[i].name + "</div></div>");
         }
     });
 });

@@ -39,13 +39,13 @@ app.get("/tables", function(req, res) {
 
 app.get("/api/tables", function(req, res) {
     // call function getTableReservations and generate HTML
-    res.json(reservationList);
+    res.json(getTableReservations());
 
 });
 
 app.get("/api/waitlist", function(req, res) {
     // call function getTableReservations and generate HTML
-    res.json(waitingList);
+    res.json(getWaitingList());
 
 });
 app.post("/api/reserve", function(req, res) {
